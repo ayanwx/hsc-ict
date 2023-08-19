@@ -15,24 +15,24 @@
 */
 
 int main() {
-    int a, b, gcd;
+    int a, b, GCD;
 
     printf("input a, b: ");
     scanf("%d, %d", &a, &b);
 
     if (a < b) {
-        gcd = a;
+        GCD = a;
     } else {
-        gcd = b;
+        GCD = b;
     }
 
     for (int i = 0; i < b; i++) {
 
-        if (a % gcd == 0 && b % gcd == 0) {
-            printf("GCD: %d\n", gcd);
+        if (a % GCD == 0 && b % GCD == 0) {
+            printf("GCD: %d\n", GCD);
             break;
         } else {
-            gcd--;
+            GCD--;
         }
         
     }
